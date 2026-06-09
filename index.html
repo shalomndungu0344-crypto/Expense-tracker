@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Expense Tracker</h1>
-    
+
+<div class="container">
+
+    <h1>Expense Tracker</h1>
+
+    <div class="balance-card">
+        <h2>Balance</h2>
+        <p id="balance">KES 0</p>
+    </div>
+
+    <form id="transaction-form">
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            required
+        >
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+            required
+        >
+
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button type="submit">
+            Add Transaction
+        </button>
+
+    </form>
+
+    <div id="transactions"></div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
